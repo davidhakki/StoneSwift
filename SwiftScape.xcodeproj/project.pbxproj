@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		63AABA7F2C0250E0009CFEFC /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AABA7E2C0250E0009CFEFC /* Server.swift */; };
+		63AABA892C0260DF009CFEFC /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AABA882C0260DF009CFEFC /* PlayerService.swift */; };
+		63AABA8B2C02615A009CFEFC /* Logger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AABA8A2C02615A009CFEFC /* Logger+.swift */; };
+		63AABA8D2C0262DC009CFEFC /* IOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AABA8C2C0262DC009CFEFC /* IOClient.swift */; };
+		63AABA8F2C026CE5009CFEFC /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AABA8E2C026CE5009CFEFC /* Stream.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		63AABA7B2C0250E0009CFEFC /* SwiftScape */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftScape; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AABA7E2C0250E0009CFEFC /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		63AABA882C0260DF009CFEFC /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		63AABA8A2C02615A009CFEFC /* Logger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+.swift"; sourceTree = "<group>"; };
+		63AABA8C2C0262DC009CFEFC /* IOClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOClient.swift; sourceTree = "<group>"; };
+		63AABA8E2C026CE5009CFEFC /* Stream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stream.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +65,37 @@
 		63AABA7D2C0250E0009CFEFC /* SwiftScape */ = {
 			isa = PBXGroup;
 			children = (
-				63AABA7E2C0250E0009CFEFC /* Server.swift */,
+				63AABA862C0260C6009CFEFC /* Services */,
+				63AABA852C0260B4009CFEFC /* Core */,
 			);
 			path = SwiftScape;
+			sourceTree = "<group>";
+		};
+		63AABA852C0260B4009CFEFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				63AABA7E2C0250E0009CFEFC /* Server.swift */,
+				63AABA8A2C02615A009CFEFC /* Logger+.swift */,
+				63AABA8E2C026CE5009CFEFC /* Stream.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		63AABA862C0260C6009CFEFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				63AABA872C0260CF009CFEFC /* Player */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		63AABA872C0260CF009CFEFC /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				63AABA882C0260DF009CFEFC /* PlayerService.swift */,
+				63AABA8C2C0262DC009CFEFC /* IOClient.swift */,
+			);
+			path = Player;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AABA8D2C0262DC009CFEFC /* IOClient.swift in Sources */,
+				63AABA8B2C02615A009CFEFC /* Logger+.swift in Sources */,
+				63AABA892C0260DF009CFEFC /* PlayerService.swift in Sources */,
 				63AABA7F2C0250E0009CFEFC /* Server.swift in Sources */,
+				63AABA8F2C026CE5009CFEFC /* Stream.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
